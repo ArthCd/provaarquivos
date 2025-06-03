@@ -46,6 +46,12 @@ export default function Menu() {
                     Livros
                   </a>
                 </li>
+
+                <li>
+                  <a className="dropdown-item" href="/listausuario">
+                    Usuario
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>

@@ -13,6 +13,10 @@ import FormEditora from "./paginas/FormEditora";
 import ListaLivro from "./paginas/ListaLivro";
 import FormLivro from "./paginas/FormLivro";
 
+// Importações dos componentes de usuário
+import ListaUsuario from "./paginas/ListaUsuario";
+import FormUsuario from "./paginas/FormUsuario";
+
 function App() {
   return (
     <>
@@ -30,15 +34,17 @@ function App() {
             <Route path="/cadastroautor" element={<FormAutor />} />
             <Route path="/cadastroautor/:id" element={<FormAutor />} />
 
-
             <Route path="/listaeditora" element={<ListaEditora />} />
             <Route path="/cadastroeditora" element={<FormEditora />} />
             <Route path="/cadastroeditora/:id" element={<FormEditora />} />
 
-          
             <Route path="/listalivro" element={<ListaLivro />} />
             <Route path="/cadastrolivro" element={<FormLivro />} />
             <Route path="/cadastrolivro/:id" element={<FormLivro />} />
+
+            <Route path="/listausuario" element={<ListaUsuario />} />
+            <Route path="/cadastrousuario" element={<FormUsuario />} />
+            <Route path="/cadastrousuario/:id" element={<FormUsuario />} />
 
             <Route path="*" element={<Home />} />
           </Routes>

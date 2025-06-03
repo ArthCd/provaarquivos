@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listagem de Livros</title>
+  <!-- Link do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de navegação (mesmo da página anterior) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Livraria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Área com título, descrição e botão -->
+  <div class="container my-5">
+    <div class="bg-light p-5 rounded">
+      <h1 class="display-6">{props.titulo}</h1>
+      <p class="lead">{props.descricao}</p>
+      <a href="{props.rota}" class="btn btn-primary">Refazer busca</a>
+    </div>
+  </div>
+
+  <!-- Lista de livros encontrados -->
+  <div class="container mb-5">
+    <ul class="list-group">
+      <!-- Item de livro 1 -->
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">O Senhor dos Anéis</div>
+          Uma aventura épica na Terra Média.
+        </div>
+        <span class="badge bg-primary rounded-pill">1954</span>
+      </li>
+
+      <!-- Item de livro 2 -->
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Dom Quixote</div>
+          As aventuras do cavaleiro da triste figura.
+        </div>
+        <span class="badge bg-secondary rounded-pill">1605</span>
+      </li>
+
+      <!-- Item de livro 3 -->
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">1984</div>
+          Um clássico distópico de George Orwell.
+        </div>
+        <span class="badge bg-danger rounded-pill">1949</span>
+      </li>
+
+      <!-- Adicione mais livros conforme necessário -->
+
+    </ul>
+  </div>
+
+  <!-- Script do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
